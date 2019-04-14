@@ -97,6 +97,12 @@
                 <%_ } _%>
                 <%_ } _%>
             </dl>
+            <dt>QrCode</dt>
+                <dd>
+                    <div>
+                        <qr-code [value]="'/<%= entityUrl %>/<%= entityInstance %>.id/view'" [size]="150"></qr-code>
+                    </div>
+                </dd>
 
             <button type="submit"
                     (click)="previousState()"
